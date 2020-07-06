@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 0 auto;
-    border: 3px solid midnightblue;
+    border: 3px solid black;
     background-color: aliceblue;
 }
 main {
@@ -27,23 +27,6 @@ main {
     padding-bottom: 2%;
 }
 
-/* DEVELOPER: Ami Patel, IS117-450, Summer 2020 */
-
-/* the styles for the elements */
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    background-color: white;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    margin: 0 auto;
-    border: 3px solid black;
-    background-color: aliceblue;
-}
 a:focus, a:hover {
     font-style: italic;
 }
@@ -54,46 +37,6 @@ a:focus, a:hover {
 main {
     clear: left;
 }
-#nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-#nav_menu ul li {
-    float: left;
-    width: 25%;
-}
-#nav_menu ul li a {
-    display: block;
-    text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: lightskyblue;
-    color: black;
-    font-weight: bold;
-}
-#nav_menu a.current {
-    color: white;
-}
-#nav_menu ul ul {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-#nav_menu ul ul li {
-    float: none;
-}
-#nav_menu ul li:hover > ul {
-    display: block;
-}
-#nav_menu > ul::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 /* the styles for the section */
 section h2 {
     font-size: 130%;
