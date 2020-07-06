@@ -7,50 +7,76 @@
     <link rel="shortcut icon" href="images/ami-1.svg">
 
     <link rel="stylesheet" href="styles/main.css">
-
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 </head>
 
 <!-- DEVELOPER: Ami Patel, IS117-450, Summer 2020 -->
 
 <body>
-<header>
-    <img src="images/ami-1.svg" alt="Ami's Resume Logo" height="60">
-    <!--logo received from https://worldvectorlogo.com/downloaded/ami-1-->
-    <h2>Ami's Resume</h2>
-</header>
-<nav id="mobile_menu"></nav>
-<nav id="nav_menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a>
-            <ul>
-                <li><a href="projects.html" class="current">Projects</a></li>
-            </ul>
-        </li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
 
-    </ul>
-</nav>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="images/ami-1.svg" alt="Logo" height="60"></a>
+            <h1 style="color: white;">Ami's Resume &nbsp;</h1>
+            <!--logo received from https://worldvectorlogo.com/downloaded/ami-1-->
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="education.html" id="navbardrop"
+                           data-toggle="dropdown">
+                            Education
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="projects.html">Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+</div>
 <main>
     <section>
         <h2><u>Projects</u></h2><br>
 
-        <div class="project">
             <h3>IT490-Systems Integration Group Project</h3>
             <ul>
             <li>Created a website for the project about nutrition with different services including RabbitMQ, PhpMyAdmin, VPN Hamachi, and Apache. Project is called Healthaholic, a nutrition related website.</li>
             <li>GitHub Link to the project: <a href="https://github.com/app83/IT490-SI.git">IT490-SI</a></li>
             </ul>
-        </div>
 
-        <div class="project">
             <br><h3>IT635-Database Administration Project</h3>
             <ul>
                 <li>Created a simple website through Docker application that enables a user to enter an ID of a medicine and retrieve information from the database using MySQL, PHP, HTML, and CSS</li>
                 <li>GitHub link to the project: <a href="https://github.com/app83/IT635_Project.git">IT635_Project</a></li>
             </ul>
-        </div>
     </section>
 </main>
 

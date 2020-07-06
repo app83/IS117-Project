@@ -50,21 +50,6 @@ a:focus, a:hover {
 .jumbotron {
     text-align: center;
 }
-/* the styles for the header */
-header {
-    border-bottom: 3px solid black;
-    padding: 1.5em 0 2em 0;
-    background-color: aliceblue;
-}
-
-header h2 {
-    font-size: 175%;
-    color: black;
-}
-header img {
-    float: left;
-    padding: 0 3.75%;
-}
 
 main {
     clear: left;
@@ -123,10 +108,6 @@ section {
 section p {
     padding-bottom: 0.5em;
 }
-section blockquote {
-    padding: 0 2em;
-    font-style: italic;
-}
 section ul {
     padding: 0 0 .25em 1.25em;
     list-style-type: circle;
@@ -140,26 +121,6 @@ section h1 {
     margin: 0;
 }
 
-/* the styles for the article */
-article {
-    padding: .5em 0;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-}
-article img {
-    float: right;
-    margin: 0.5em 0 1em 1em;
-    border-top: 1px solid black;
-    max-width: 40%;
-    min-width: 150px;
-}
-article h2 {
-    padding-top: 0;
-}
-article h3 {
-    font-size: 105%;
-    padding-bottom: 0.25em;
-}
 /* the styles for the aside */
 aside h2 {
     font-size: 130%;
